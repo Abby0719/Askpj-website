@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+
+  <section id="header">
+    <a href="#"><img src="logo b (1).jpg" class="logo" alt=""></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="active" href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>      
+      </ul>
+
+<style>
+   body #header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+</style>
+
+<style>
+  body #navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+ body #navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+ }
+
+  body #navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#1a1a1a;
+    transition: 0.3s ease;
+  }
+
+  body #navbar li a:hover,
+  #navbar li a.active{
+    color: #088178;
+  }
+
+  body #navbar li a.active::after,
+  #navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+</style>
+
+    </div>
+  </section>
+
+<section id="page-header" class="blog-header">
+  <h2>#readmore</h2>
+  <p>Read all case studies about our products!</p>
+
+  <style>
+    body #page-header.blog-header{
+        background-image: url(banner6.jpg);
+    }
+  </style>
+
+  <style>
+    body #page-header{
+        background-image: url(c\ b.jpg);
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 14px;
+    }
+
+    body #page-header h2,
+    #page-header p{
+        color: #fff
+    }
+  </style>
+
+<style>
+  @import url('https:fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900$display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+
+}
+
+h2{
+font-size: 46px;
+line-height: 54px;
+color: #222;
+
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin:40px 0;
+}
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  border:1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+}
+
+body{
+    width:100%;
+}
+</style>
+
+
+  <style>
+    body #hero{
+      background-image: url("backg.jpg");
+      height: 90vh;
+      width: 100%;
+      background-size: cover;
+      padding: 0 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    body #hero h4{
+      padding-bottom: 15px;
+    }
+
+    body #hero h1{
+      color: #088178;
+    }
+
+    body #hero button{
+      background-image: url("button.jpg");
+      background-color: transparent;
+      color: #088178;
+      border: 0;
+      padding: 14px 80px 14px 65px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 15px;
+    }
+  </style>
+
+  <style>
+    @media (max-width:799px) {
+      body #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+}
+body #navbar li{
+  margin-bottom: 25px;
+}
+    }
+  </style>
+</section>
+
+<section id="blog">
+    <div class="blog-box">
+        <div class="blog-img">
+            <img src="n1.jpg" alt="">
+        </div>
+        <div class="blog-details">
+            <h4>Super Big Pearls Earrings</h4>
+            <p>I was concerned about buying expensive jewelry online. I had several phone conversations and email exchanges with Diamondere personnel, my fears were allayed, and they delivered as promised.</p>
+            <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>13/01</h1>
+    </div>
+    <div class="blog-box">
+        <div class="blog-img">
+            <img src="n6.jpg" alt="">
+        </div>
+        <div class="blog-details">
+            <h4>Shell-Pearl Set</h4>
+            <p>These are not only gorgeous and unique, but so extremely well made and lightweight. I ordered the earrings only, but had to go back and also purchase the ring and jewelry since I loved them so much. These earrings are one of the best products I've ever purchased on HSN.</p>
+            <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>26/03</h1>
+    </div>
+    <div class="blog-box">
+        <div class="blog-img">
+            <img src="n8.jpg" alt="">
+        </div>
+        <div class="blog-details">
+            <h4>Engravable Necklace</h4>
+            <p>"Live the memory. I purchased it for my daughter who had her second baby April 4 for a Mother’s Day gift. Her husband left her and her 18 month old in sept 2022. Her little ones mean everything to her."</p>
+            <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>19/07</h1>
+    </div>
+    <div class="blog-box">
+        <div class="blog-img">
+            <img src="n7.jpg" alt="">
+        </div>
+        <div class="blog-details">
+            <h4>Emerald Ring</h4>
+            <p>I'm impressed with this emerald ring. I was expecting something very cheap looking because of the price, but this is made pretty well. I like the simple style and the color of the emerald is very pretty. I like to switch out my jewelry according to seasons or holidays so I'm planning to wear this on St. Patty's Day as well as during the holidays to feel festive.</p>
+            <a href="#">CONTINUE READING</a>
+        </div>
+        <h1>12/09</h1>
+    </div>
+
+    <style>
+        body #blog{
+            padding: 150px 150px 0 150px;
+        }
+
+        body #blog .blog-box{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            padding-bottom: 90px;
+        }
+
+        body #blog .blog-img{
+            width: 50%;
+            margin-right: 40px;
+        }
+
+        body #blog img{
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+        }
+
+        body #blog .blog-details{
+            width: 50%;
+        }
+
+        body #blog .blog-details a{
+            text-decoration: none;
+            font-size: 11px;
+            color: #000;
+            font-weight: 700;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        body #blog .blog-details a::after{
+            content: "";
+            width: 50px;
+            height: 1px;
+            background-color: #000;
+            position: absolute;
+            top: 4px;
+            right: -60px;
+        }
+
+        body #blog .blog-details a:hover{
+            color: #088178;
+        }
+
+        body #blog .blog-details a:hover::after{
+            background-color: #088178;
+        }
+
+        body #blog .blog-box h1{
+            position: absolute;
+            top: -40px;
+            left: 0;
+            font-size: 70px;
+            font-weight: 700;
+            color: #c9cbce;
+            z-index: -9;
+        }
+
+    </style>
+</section>
+
+<section id="pagination" class="section-p1">
+    <a href="#">1</a>
+    <a href="#">2</a>
+    <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+
+<style>
+    body #pagination{
+        text-align: center;
+    }
+
+    body #pagination a{
+        text-decoration: none;
+        background-color: #088178;
+        padding: 15px 20px;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    body #pagination a i{
+        font-size: 16px;
+        font-weight: 600;
+    }
+</style>
+
+</section>
+
+<section id="newsletter" class="section-p1 section-m1">
+  <div class="newstext">
+    <h4>Sign Up For Newsletters</h4>
+    <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
+  </div>
+  <div class="form">
+    <input type="text" placeholder="Your email address">
+    <button class="normal">Sign Up</button>
+  </div>
+
+<style>
+  body #newsletter{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+  }
+
+  body #newsletter h4{
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  body #newsletter p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #818ea0;
+  }
+
+  body #newsletter p span{
+    color: #ffbd27;
+  }
+
+body #newsletter .form{
+  display: flex;
+  width: 40%;
+}
+
+  body #newsletter input{
+    height: 50px;
+    padding: 0 1.25em;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  body #newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+</style>
+
+</section>
+
+<footer class="section-p1">
+  <div class="col">
+    <img class="logo"src="logo1 white.jpg"alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> 432 Welltone Road, Street 5, San Fransisco</p>
+    <p><strong>Phone:</strong>+60 18 9008911</p>
+    <p><strong>Hours:</strong>10.00a.m. - 18.00p.m., Mon-Sat</p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+    <A href="#">Contact us</A>
+  </div>
+
+  <div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <A href="#">Help</A>
+  </div>
+
+  <div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+      <img src="app store.jpg"alt="">
+      <img src="go play (1).jpg"alt="" height="50px" width="160">
+    </div>
+    <p>Securd Payment Gateways</p>
+    <img src="payment (1) (1).jpg"alt="">
+  </div>
+
+  <div class="copyright">
+    <p>@ 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
+  </div>
+
+  <style>
+    body footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    body footer .col{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    body footer .logo{
+      margin-bottom: 30px;
+    }
+
+    body footer h4{
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+
+    body footer p{
+      font-size: 13px;
+      margin: 0 0  8px 0;
+}
+
+    body footer a{
+      font-size: 13px;
+      text-decoration: none;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    body footer .follow{
+      margin-top: 20px;
+    }
+
+    body footer .follow i{
+      color: #465b52;
+      padding-right: 4px;
+      cursor: pointer;
+    }
+
+    body footer .install .row img{
+      border: 1px solid #088178;
+      border-radius: 6px;
+    }
+
+    body footer .install img{
+      margin: 10px 0 15px 0;
+    }
+
+    body footer .follow i:hover,
+    footer a:hover {
+      color: #088178;
+    }
+
+    body footer .copyright {
+      width: 100%;
+      text-align: center;
+    }
+
+  </style>
+</footer>
+
+  <script src="script.js></script>
+</body>
+
+</html>

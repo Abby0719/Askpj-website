@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+</head>
+
+<body>
+
+  <section id="header">
+    <a href="#"><img src="logo b (1).jpg" class="logo" alt=""></a>
+
+    <div>
+      <ul id="navbar">
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>      
+      </ul>
+
+<style>
+   body #header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #e3e6f3;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+</style>
+
+<style>
+  body #navbar{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+ body #navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+ }
+
+  body #navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color:#1a1a1a;
+    transition: 0.3s ease;
+  }
+
+  body #navbar li a:hover,
+  #navbar li a.active{
+    color: #088178;
+  }
+
+  body #navbar li a.active::after,
+  #navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+  }
+</style>
+
+    </div>
+  </section>
+
+<section id="page-header" class="about-header">
+  <h2>#Let's_Talk</h2>
+  <p>LEAVE A MESSAGE,We love to hear from you!</p>
+
+  <style>
+    body #page-header.about-header{
+        background-image: url(banner.jpg);
+    }
+  </style>
+
+  <style>
+    body #page-header.blog-header{
+        background-image: url(banner6.jpg);
+    }
+  </style>
+
+  <style>
+    body #page-header{
+        background-image: url(c\ b.jpg);
+        width: 100%;
+        height: 40vh;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        padding: 14px;
+    }
+
+    body #page-header h2,
+    #page-header p{
+        color: #fff
+    }
+  </style>
+
+<style>
+  @import url('https:fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900$display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Spartan', sans-serif;
+}
+
+h1{
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+
+}
+
+h2{
+font-size: 46px;
+line-height: 54px;
+color: #222;
+
+}
+
+h4{
+    font-size: 20px;
+    color: #222;
+}
+
+h6{
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p{
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1{
+    padding: 40px 80px;
+}
+
+.section-m1{
+    margin:40px 0;
+}
+
+button.normal{
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s;
+}
+
+button.white{
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  border:1px solid #fff;
+  outline: none;
+  transition: 0.2s;
+}
+
+body{
+    width:100%;
+}
+</style>
+
+
+  <style>
+    body #hero{
+      background-image: url("backg.jpg");
+      height: 90vh;
+      width: 100%;
+      background-size: cover;
+      padding: 0 80px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+    }
+
+    body #hero h4{
+      padding-bottom: 15px;
+    }
+
+    body #hero h1{
+      color: #088178;
+    }
+
+    body #hero button{
+      background-image: url("button.jpg");
+      background-color: transparent;
+      color: #088178;
+      border: 0;
+      padding: 14px 80px 14px 65px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 15px;
+    }
+  </style>
+
+  <style>
+    @media (max-width:799px) {
+      body #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: #e3e6f3;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+    padding: 80px 0 0 10px;
+}
+body #navbar li{
+  margin-bottom: 25px;
+}
+    }
+  </style>
+</section>
+
+<section id="contact-details" class="section-p1">
+    <div class="details">
+        <span>GET IN TOUCH</span>
+        <h2>Visit one of our agency locations or contact us today</h2>
+        <h3>Head Office</h3>
+        <div>
+            <li>
+                <i class="fal fa-map"></i>
+                <p>56 Glassford Street Glasgow G1 1UL New York</p>
+            </li>
+            <li>
+                <i class="fal fa-envelope"></i>
+                <p>contact@example.com</p>
+            </li>
+            <li>
+                <i class="fal fa-phone-alt"></i>
+                <p>contact@example.com</p>
+            </li>
+            <li>
+                <i class="fal fa-clock"></i>
+                <p>Monday to Saturday: 9.00am to 16.00pm</p>
+            </li>
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.808802958649!2d-1.2569470892261145!3d51.75481969248297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876c6a9ef8c485b%3A0xd2ff1883a001afed!2z54mb5rSl5aSn5a2m!5e0!3m2!1szh-CN!2smy!4v1701077410759!5m2!1szh-CN!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+            <style>
+                body #contact-details{
+                    display: flex;
+                justify-content: space-between;
+                margin: 30px;
+                padding: 80px;border: 1px solid #e1e1e1;
+                }
+
+                body #contact-details .details{
+                    width: 40%;
+                }
+
+                body #contact-details .details span,
+                #form-details form span{
+                    font-size: 12px;
+                }
+
+                body #contact-details .details h2,
+                #form-details form h2{
+                    font-size: 26px;
+                    line-height: 35px;
+                    padding: 20px 0;
+                }
+
+                body #contact-details .details h3{
+                    font-size: 16px;
+                   padding-bottom: 15px;
+                }
+
+                body #contact-details .details li{
+                    list-style: none;
+                    display: flex;
+                    padding: 10px 0;
+                }
+
+                body #contact-details .details li i{
+                    font-size: 14px;
+                    padding-right: 22px;
+                }
+
+                body #contact-details .details li p{
+                    margin: 0;
+                    font-size: 14px;
+                }
+
+                body #contact-details .map{
+                    width: 55%;
+                    height: 400px;
+                }
+
+                body #contact-details .map iframe{
+                    width: 700px;
+                    height: 100%;
+                }
+
+            </style>
+        </div>
+
+</section>
+
+<section id="form-details">
+    <form action="">
+        <span>LEAVE A MESSAGE</span>
+        <h2>We love to hear from you</h2>
+        <input type="text" placeholder="Your Name">
+        <input type="text" placeholder="E-mail">
+        <input type="text" placeholder="Subject">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <button class="normal">Submit</button>
+
+        <style>
+            body #form-details{
+                display: flex;
+                justify-content: space-between;
+                margin: 30px;
+                padding: 80px;border: 1px solid #e1e1e1;
+            }
+
+            body #form-details form{
+                width: 65%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            body #form-details form input,
+            #form-details form textarea{
+                width: 100%;
+                padding: 12px 15px;
+                outline: none;
+                margin-bottom: 20px;
+                border: 1px solid #e1e1e1;
+            }
+
+            body #form-details form button{
+                background-color: #088178;
+                color: #fff;
+            }
+
+        </style>
+    </form>
+
+    <div class="people">
+        <div>
+            <img src="pp1.jpg"alt="">
+            <p><span>Selin Soh</span> Senior Marketting Manager <br> Phone: +60 11 5446778 <br> Email: selin@gmail.com</p>
+        </div>
+        <div>
+            <img src="pp2.jpg"alt="">
+            <p><span>Alin Uh</span> Senior Marketting Manager <br> Phone: +60 13 5455668 <br> Email: alin@gmail.com</p>
+        </div>
+        <div>
+            <img src="pp3.jpg"alt="">
+            <p><span>Stephie Cou</span> Senior Marketting Manager <br> Phone: +60 10 8946790 <br> Email: stephie@gmail.com</p>
+        </div>
+
+        <style>
+            body #form-details .people div{
+                padding-bottom: 25px;
+                display: flex;
+                align-items: flex-start;
+            }
+
+            body #form-details .people div img{
+                width: 65px;
+                height: 65px;
+                object-fit: cover;
+                margin-right: 15px;
+            }
+
+            body #form-details .people div p{
+                margin: 0;
+                font-size: 13px;
+                line-height: 25px;
+            }
+
+            body #form-details .people div p span{
+                display: block;
+                font-size: 16px;
+                font-weight: 600;
+                color: #000;
+            }
+        </style>
+    </div>
+</section>
+
+  <section id="newsletter" class="section-p1 section-m1">
+    <div class="newstext">
+      <h4>Sign Up For Newsletters</h4>
+      <p>Get E-mail updates about our latest shop and <span>special offers</span>.</p>
+    </div>
+    <div class="form">
+      <input type="text" placeholder="Your email address">
+      <button class="normal">Sign Up</button>
+    </div>
+  
+  <style>
+    body #newsletter{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      background-image: url();
+      background-repeat: no-repeat;
+      background-position: 20% 30%;
+      background-color: #041e42;
+    }
+  
+    body #newsletter h4{
+      font-size: 22px;
+      font-weight: 700;
+      color: #fff;
+    }
+  
+    body #newsletter p{
+      font-size: 14px;
+      font-weight: 600;
+      color: #818ea0;
+    }
+  
+    body #newsletter p span{
+      color: #ffbd27;
+    }
+  
+  body #newsletter .form{
+    display: flex;
+    width: 40%;
+  }
+  
+    body #newsletter input{
+      height: 50px;
+      padding: 0 1.25em;
+      font-size: 14px;
+      width: 100%;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      outline: none;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  
+    body #newsletter button{
+      background-color: #088178;
+      color: #fff;
+      white-space: nowrap;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+    }
+  </style>
+  
+  </section>
+
+<footer class="section-p1">
+  <div class="col">
+    <img class="logo"src="logo1 white.jpg"alt="">
+    <h4>Contact</h4>
+    <p><strong>Address:</strong> 432 Welltone Road, Street 5, San Fransisco</p>
+    <p><strong>Phone:</strong>+60 18 9008911</p>
+    <p><strong>Hours:</strong>10.00a.m. - 18.00p.m., Mon-Sat</p>
+    <div class="follow">
+      <h4>Follow Us</h4>
+      <div class="icon">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-pinterest-p"></i>
+        <i class="fab fa-youtube"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <h4>About</h4>
+    <a href="#">About us</a>
+    <a href="#">Delivery Information</a>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms & Conditions</a>
+    <A href="#">Contact us</A>
+  </div>
+
+  <div class="col">
+    <h4>My Account</h4>
+    <a href="#">Sign In</a>
+    <a href="#">View Cart</a>
+    <a href="#">My Wishlist</a>
+    <a href="#">Track My Order</a>
+    <A href="#">Help</A>
+  </div>
+
+  <div class="col install">
+    <h4>Install App</h4>
+    <p>From App Store or Google Play</p>
+    <div class="row">
+      <img src="app store.jpg"alt="">
+      <img src="go play (1).jpg"alt="" height="50px" width="160">
+    </div>
+    <p>Securd Payment Gateways</p>
+    <img src="payment (1) (1).jpg"alt="">
+  </div>
+
+  <div class="copyright">
+    <p>@ 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
+  </div>
+
+  <style>
+    body footer{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    body footer .col{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    body footer .logo{
+      margin-bottom: 30px;
+    }
+
+    body footer h4{
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+
+    body footer p{
+      font-size: 13px;
+      margin: 0 0  8px 0;
+}
+
+    body footer a{
+      font-size: 13px;
+      text-decoration: none;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    body footer .follow{
+      margin-top: 20px;
+    }
+
+    body footer .follow i{
+      color: #465b52;
+      padding-right: 4px;
+      cursor: pointer;
+    }
+
+    body footer .install .row img{
+      border: 1px solid #088178;
+      border-radius: 6px;
+    }
+
+    body footer .install img{
+      margin: 10px 0 15px 0;
+    }
+
+    body footer .follow i:hover,
+    footer a:hover {
+      color: #088178;
+    }
+
+    body footer .copyright {
+      width: 100%;
+      text-align: center;
+    }
+
+  </style>
+</footer>
+
+  <script src="script.js></script>
+</body>
+
+</html>
